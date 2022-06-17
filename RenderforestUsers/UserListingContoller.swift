@@ -14,7 +14,11 @@ final class UserListingContoller: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       
+        usersTableView.setUsers(selectedTab: TabEnum.users)
+    }
+    
+    @IBAction func changeTabAction(_ sender: UISegmentedControl) {
+        usersTableView.setUsers(selectedTab: TabEnum(rawValue: sender.selectedSegmentIndex) ?? .users)
     }
 }
 

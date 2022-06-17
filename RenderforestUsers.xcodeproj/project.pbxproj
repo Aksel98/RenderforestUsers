@@ -33,6 +33,10 @@
 		92D8620D285D242100B5388C /* SingleUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D8620C285D242100B5388C /* SingleUserController.swift */; };
 		92D8620F285D242D00B5388C /* SingleUserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D8620E285D242D00B5388C /* SingleUserController.xib */; };
 		92D86211285D251D00B5388C /* UserSelectionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D86210285D251D00B5388C /* UserSelectionCommand.swift */; };
+		92D86229285D47C900B5388C /* TabbarEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D86228285D47C900B5388C /* TabbarEnum.swift */; };
+		92D8622B285D47DB00B5388C /* UserApiDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D8622A285D47DB00B5388C /* UserApiDataProvider.swift */; };
+		92D8622D285D47E900B5388C /* UserLocalDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D8622C285D47E900B5388C /* UserLocalDataProvider.swift */; };
+		92D86230285D482000B5388C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D8622F285D482000B5388C /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +87,10 @@
 		92D8620C285D242100B5388C /* SingleUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleUserController.swift; sourceTree = "<group>"; };
 		92D8620E285D242D00B5388C /* SingleUserController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleUserController.xib; sourceTree = "<group>"; };
 		92D86210285D251D00B5388C /* UserSelectionCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelectionCommand.swift; sourceTree = "<group>"; };
+		92D86228285D47C900B5388C /* TabbarEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarEnum.swift; sourceTree = "<group>"; };
+		92D8622A285D47DB00B5388C /* UserApiDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiDataProvider.swift; sourceTree = "<group>"; };
+		92D8622C285D47E900B5388C /* UserLocalDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalDataProvider.swift; sourceTree = "<group>"; };
+		92D8622F285D482000B5388C /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,13 +141,13 @@
 		92D861A9285D054500B5388C /* RenderforestUsers */ = {
 			isa = PBXGroup;
 			children = (
-				92D8620B285D240E00B5388C /* SingleUserController */,
 				92D861F7285D132A00B5388C /* Data */,
 				92D861E6285D0BA700B5388C /* Listing */,
 				92D861DE285D083800B5388C /* Main */,
 				92D861DB285D073000B5388C /* Extensions */,
 				92D861DA285D056100B5388C /* Storyboards */,
 				92D861F0285D110600B5388C /* Delegates */,
+				92D8620B285D240E00B5388C /* SingleUserController */,
 				92D861AE285D054500B5388C /* UserListingContoller.swift */,
 				92D861B3285D054600B5388C /* Assets.xcassets */,
 				92D861B8285D054600B5388C /* Info.plist */,
@@ -184,6 +192,7 @@
 		92D861DE285D083800B5388C /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				92D86227285D479700B5388C /* Enums */,
 				92D861F4285D120200B5388C /* Protocols */,
 				92D861F1285D11D000B5388C /* Commands */,
 				92D861E1285D08EB00B5388C /* ApplicationThemes */,
@@ -263,6 +272,7 @@
 		92D861F7285D132A00B5388C /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				92D86226285D473F00B5388C /* DataProviders */,
 				92D861F8285D132E00B5388C /* Models */,
 			);
 			path = Data;
@@ -271,6 +281,7 @@
 		92D861F8285D132E00B5388C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				92D8622F285D482000B5388C /* Result.swift */,
 				92D861F9285D136200B5388C /* User */,
 				92D86205285D152E00B5388C /* Name */,
 				92D86208285D158800B5388C /* Picture */,
@@ -336,6 +347,23 @@
 				92D8620E285D242D00B5388C /* SingleUserController.xib */,
 			);
 			path = SingleUserController;
+			sourceTree = "<group>";
+		};
+		92D86226285D473F00B5388C /* DataProviders */ = {
+			isa = PBXGroup;
+			children = (
+				92D8622A285D47DB00B5388C /* UserApiDataProvider.swift */,
+				92D8622C285D47E900B5388C /* UserLocalDataProvider.swift */,
+			);
+			path = DataProviders;
+			sourceTree = "<group>";
+		};
+		92D86227285D479700B5388C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				92D86228285D47C900B5388C /* TabbarEnum.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -478,16 +506,20 @@
 				92D8620A285D159400B5388C /* Picture.swift in Sources */,
 				92D8620D285D242100B5388C /* SingleUserController.swift in Sources */,
 				92D861F6285D121000B5388C /* CommonCommand.swift in Sources */,
+				92D86229285D47C900B5388C /* TabbarEnum.swift in Sources */,
 				92D86211285D251D00B5388C /* UserSelectionCommand.swift in Sources */,
 				92D861F3285D11E400B5388C /* GetUsersCommand.swift in Sources */,
+				92D86230285D482000B5388C /* Result.swift in Sources */,
 				92D86204285D14B700B5388C /* Street.swift in Sources */,
 				92D861AB285D054500B5388C /* AppDelegate.swift in Sources */,
 				92D861AD285D054500B5388C /* SceneDelegate.swift in Sources */,
 				92D86207285D154000B5388C /* Name.swift in Sources */,
+				92D8622B285D47DB00B5388C /* UserApiDataProvider.swift in Sources */,
 				92D861DD285D075900B5388C /* UIColorExtension.swift in Sources */,
 				92D86202285D14AE00B5388C /* Coordinates.swift in Sources */,
 				92D861E8285D0C1000B5388C /* UsersTableView.swift in Sources */,
 				92D861FE285D148600B5388C /* Location.swift in Sources */,
+				92D8622D285D47E900B5388C /* UserLocalDataProvider.swift in Sources */,
 				92D861FB285D142600B5388C /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

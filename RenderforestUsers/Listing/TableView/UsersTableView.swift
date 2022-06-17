@@ -9,16 +9,11 @@ import UIKit
 
 final class UsersTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
     
-    var users: [User] = [] {
-        didSet {
-            reloadData()
-        }
-    }
+    var users: [User] = []
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        getUsers()
         configure()
     }
     
@@ -49,9 +44,8 @@ final class UsersTableView: UITableView, UITableViewDelegate, UITableViewDataSou
         return cell
     }
     
-    private func getUsers() {
-        GetUsersCommand(successHandler: { [weak self] users in
-            self?.users = users
-        }).execute()
+    func setUsers(selectedTab: TabEnum) {
+        self.users = selectedTab == .users ? UserApiDataProvider.shared.getUsers() : UserApiDataProvider.shared.getUsers()
+        reloadData()
     }
 }

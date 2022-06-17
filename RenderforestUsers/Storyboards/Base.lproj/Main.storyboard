@@ -28,6 +28,9 @@
                                             <segment title="Users"/>
                                             <segment title="Saved Users"/>
                                         </segments>
+                                        <connections>
+                                            <action selector="changeTabAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="Pph-fe-4p6"/>
+                                        </connections>
                                     </segmentedControl>
                                     <searchBar contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Cfh-Jq-E8h">
                                         <rect key="frame" x="-8" y="43" width="398" height="36"/>

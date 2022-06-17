@@ -10,13 +10,15 @@ import Foundation
 struct GetUsersCommand: CommonCommand {
     
     private let successHandler: (([User]) -> Void)
+    private let page: Int
     
-    init(successHandler: @escaping (([User]) -> Void)) {
+    init(successHandler: @escaping (([User]) -> Void), page: Int) {
         self.successHandler = successHandler
+        self.page = page
     }
     
     func execute() {
-        guard let url = URL(string: "https://randomuser.me/api?seed=renderforest&results=20&page=1") else { return }
+        guard let url = URL(string: "https://randomuser.me/api?seed=renderforest&results=20&page=\(page)") else { return }
         
         URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
             guard let data = data else { return }
@@ -34,6 +36,3 @@ struct GetUsersCommand: CommonCommand {
     }
 }
 
-struct Result: Decodable {
-    var results: [User]
-}
