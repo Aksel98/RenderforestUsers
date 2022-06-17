@@ -15,14 +15,16 @@ class UsersCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        backgroundColor = .gray
+        
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    func configure(config: User) {
+        if let url = URL(string: config.picture.medium), let data = try? Data(contentsOf: url) {
+            userImageView.image = UIImage(data: data)
+        }
+        
+        nameLabel.text = config.getName()
+        infoLabel.text = config.getInfo()
     }
     
 }

@@ -7,7 +7,13 @@
 
 import Foundation
 
-class GetUsersCommand: CommonCommand {
+struct GetUsersCommand: CommonCommand {
+    
+    private let successHandler: (([User]) -> Void)
+    
+    init(successHandler: @escaping (([User]) -> Void)) {
+        self.successHandler = successHandler
+    }
     
     func execute() {
         guard let url = URL(string: "https://randomuser.me/api?seed=renderforest&results=20&page=1") else { return }
@@ -16,11 +22,11 @@ class GetUsersCommand: CommonCommand {
             guard let data = data else { return }
 
             do {
-                let users = try JSONDecoder().decode(Results.self, from: data)
-                print(users)
+                let data = try JSONDecoder().decode(Result.self, from: data)
                 
-//                let data = try JSONSerialization.jsonObject(with: data, options: [])
-//                print(data)
+                DispatchQueue.main.async {
+                    self.successHandler(data.results)
+                }
             } catch {
                 print(error)
             }
@@ -28,6 +34,6 @@ class GetUsersCommand: CommonCommand {
     }
 }
 
-struct Results: Decodable {
+struct Result: Decodable {
     var results: [User]
 }

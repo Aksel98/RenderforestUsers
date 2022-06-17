@@ -7,19 +7,22 @@
 
 import UIKit
 
-class UsersTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
+final class UsersTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
     
-    override public init(frame: CGRect, style: UITableView.Style) {
-        super.init(frame: frame, style: style)
-        commonInit()
+    var users: [User] = [] {
+        didSet {
+            reloadData()
+        }
     }
     
-    required public init?(coder: NSCoder) {
-        super.init(coder: coder)
-        commonInit()
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
+        getUsers()
+        configure()
     }
     
-    func commonInit() {
+    func configure() {
         let nib = UINib(nibName: "UsersCell", bundle: nil)
         register(nib, forCellReuseIdentifier: "UsersCell")
         delegate = self
@@ -31,12 +34,24 @@ class UsersTableView: UITableView, UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        print(users)
+        return users.count
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        UserSelectionCommand(user: users[indexPath.row]).execute()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "UsersCell", for: indexPath) as! UsersCell
-        cell.nameLabel.text = "name"
+        cell.configure(config: users[indexPath.row])
+        
         return cell
+    }
+    
+    private func getUsers() {
+        GetUsersCommand(successHandler: { [weak self] users in
+            self?.users = users
+        }).execute()
     }
 }

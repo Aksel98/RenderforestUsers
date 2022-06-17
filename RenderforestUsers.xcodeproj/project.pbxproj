@@ -30,6 +30,9 @@
 		92D86204285D14B700B5388C /* Street.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D86203285D14B700B5388C /* Street.swift */; };
 		92D86207285D154000B5388C /* Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D86206285D154000B5388C /* Name.swift */; };
 		92D8620A285D159400B5388C /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D86209285D159400B5388C /* Picture.swift */; };
+		92D8620D285D242100B5388C /* SingleUserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D8620C285D242100B5388C /* SingleUserController.swift */; };
+		92D8620F285D242D00B5388C /* SingleUserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92D8620E285D242D00B5388C /* SingleUserController.xib */; };
+		92D86211285D251D00B5388C /* UserSelectionCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D86210285D251D00B5388C /* UserSelectionCommand.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +80,9 @@
 		92D86203285D14B700B5388C /* Street.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Street.swift; sourceTree = "<group>"; };
 		92D86206285D154000B5388C /* Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Name.swift; sourceTree = "<group>"; };
 		92D86209285D159400B5388C /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
+		92D8620C285D242100B5388C /* SingleUserController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleUserController.swift; sourceTree = "<group>"; };
+		92D8620E285D242D00B5388C /* SingleUserController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SingleUserController.xib; sourceTree = "<group>"; };
+		92D86210285D251D00B5388C /* UserSelectionCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSelectionCommand.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,7 @@
 		92D861A9285D054500B5388C /* RenderforestUsers */ = {
 			isa = PBXGroup;
 			children = (
+				92D8620B285D240E00B5388C /* SingleUserController */,
 				92D861F7285D132A00B5388C /* Data */,
 				92D861E6285D0BA700B5388C /* Listing */,
 				92D861DE285D083800B5388C /* Main */,
@@ -240,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				92D861F2285D11E400B5388C /* GetUsersCommand.swift */,
+				92D86210285D251D00B5388C /* UserSelectionCommand.swift */,
 			);
 			path = Commands;
 			sourceTree = "<group>";
@@ -319,6 +327,15 @@
 				92D86209285D159400B5388C /* Picture.swift */,
 			);
 			path = Picture;
+			sourceTree = "<group>";
+		};
+		92D8620B285D240E00B5388C /* SingleUserController */ = {
+			isa = PBXGroup;
+			children = (
+				92D8620C285D242100B5388C /* SingleUserController.swift */,
+				92D8620E285D242D00B5388C /* SingleUserController.xib */,
+			);
+			path = SingleUserController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -429,6 +446,7 @@
 				92D861B7285D054600B5388C /* LaunchScreen.storyboard in Resources */,
 				92D861B4285D054600B5388C /* Assets.xcassets in Resources */,
 				92D861B2285D054500B5388C /* Main.storyboard in Resources */,
+				92D8620F285D242D00B5388C /* SingleUserController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +476,9 @@
 				92D861E0285D084500B5388C /* ThemeManager.swift in Sources */,
 				92D861E4285D091E00B5388C /* BaseThemeColors.swift in Sources */,
 				92D8620A285D159400B5388C /* Picture.swift in Sources */,
+				92D8620D285D242100B5388C /* SingleUserController.swift in Sources */,
 				92D861F6285D121000B5388C /* CommonCommand.swift in Sources */,
+				92D86211285D251D00B5388C /* UserSelectionCommand.swift in Sources */,
 				92D861F3285D11E400B5388C /* GetUsersCommand.swift in Sources */,
 				92D86204285D14B700B5388C /* Street.swift in Sources */,
 				92D861AB285D054500B5388C /* AppDelegate.swift in Sources */,
