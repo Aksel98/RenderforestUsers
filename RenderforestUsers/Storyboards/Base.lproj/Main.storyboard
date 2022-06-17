@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Listing Contoller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="UserListingContoller" customModule="RenderforestUsers" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sAB-2E-4Z7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wzm-zy-mUY">
+                                <rect key="frame" x="16" y="69" width="382" height="89"/>
+                                <subviews>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="MNG-dx-WlH">
+                                        <rect key="frame" x="0.0" y="0.0" width="382" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="32" id="YJ4-Mh-2Ev"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="Users"/>
+                                            <segment title="Saved Users"/>
+                                        </segments>
+                                    </segmentedControl>
+                                    <searchBar contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="Cfh-Jq-E8h">
+                                        <rect key="frame" x="-8" y="43" width="398" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="EbR-yb-EHn"/>
+                                        </constraints>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </searchBar>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="MNG-dx-WlH" secondAttribute="trailing" id="0UX-i1-aWy"/>
+                                    <constraint firstItem="Cfh-Jq-E8h" firstAttribute="top" secondItem="MNG-dx-WlH" secondAttribute="bottom" constant="11" id="1Yf-lV-dAG"/>
+                                    <constraint firstItem="MNG-dx-WlH" firstAttribute="top" secondItem="wzm-zy-mUY" secondAttribute="top" id="5db-cf-DeV"/>
+                                    <constraint firstItem="Cfh-Jq-E8h" firstAttribute="leading" secondItem="wzm-zy-mUY" secondAttribute="leading" constant="-8" id="G5p-No-7Hl"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cfh-Jq-E8h" secondAttribute="bottom" constant="10" id="VWD-p9-29e"/>
+                                    <constraint firstItem="MNG-dx-WlH" firstAttribute="leading" secondItem="wzm-zy-mUY" secondAttribute="leading" id="b81-hT-Rhr"/>
+                                    <constraint firstAttribute="trailing" secondItem="Cfh-Jq-E8h" secondAttribute="trailing" constant="-8" id="cdn-33-P5z"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ex6-uW-Ipy">
+                                <rect key="frame" x="0.0" y="158" width="414" height="1"/>
+                                <color key="backgroundColor" systemColor="systemGray2Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="npN-hS-ReF"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="j0E-h4-ysA" customClass="UsersTableView" customModule="RenderforestUsers" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="159" width="414" height="703"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Jab-D6-8Sj"/>
+                        <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Jab-D6-8Sj" firstAttribute="trailing" secondItem="wzm-zy-mUY" secondAttribute="trailing" constant="16" id="1Zv-DZ-SfR"/>
+                            <constraint firstItem="Jab-D6-8Sj" firstAttribute="trailing" secondItem="ex6-uW-Ipy" secondAttribute="trailing" id="IXN-2j-Kix"/>
+                            <constraint firstItem="ex6-uW-Ipy" firstAttribute="top" secondItem="wzm-zy-mUY" secondAttribute="bottom" id="OhD-vk-GBY"/>
+                            <constraint firstItem="j0E-h4-ysA" firstAttribute="leading" secondItem="Jab-D6-8Sj" secondAttribute="leading" id="VsN-lD-1co"/>
+                            <constraint firstItem="j0E-h4-ysA" firstAttribute="top" secondItem="ex6-uW-Ipy" secondAttribute="bottom" id="ZoL-1x-60q"/>
+                            <constraint firstItem="wzm-zy-mUY" firstAttribute="top" secondItem="Jab-D6-8Sj" secondAttribute="top" constant="25" id="aOP-Tc-ktj"/>
+                            <constraint firstItem="ex6-uW-Ipy" firstAttribute="leading" secondItem="Jab-D6-8Sj" secondAttribute="leading" id="aeS-hj-LXt"/>
+                            <constraint firstItem="wzm-zy-mUY" firstAttribute="leading" secondItem="Jab-D6-8Sj" secondAttribute="leading" constant="16" id="inw-yX-qos"/>
+                            <constraint firstItem="Jab-D6-8Sj" firstAttribute="bottom" secondItem="j0E-h4-ysA" secondAttribute="bottom" id="nd3-dp-avD"/>
+                            <constraint firstItem="Jab-D6-8Sj" firstAttribute="trailing" secondItem="j0E-h4-ysA" secondAttribute="trailing" id="xeU-km-5zZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="usersTableView" destination="j0E-h4-ysA" id="9Sa-P0-X98"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23" y="104"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
