@@ -10,4 +10,8 @@ import Foundation
 struct Coordinates: Decodable {
     let latitude: String
     let longitude: String
+    
+    func localTransform() -> CoordinatesRealm {
+        return CoordinatesRealm(latitude: latitude, longitude: longitude)
+    }
 }

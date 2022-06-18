@@ -10,4 +10,8 @@ import Foundation
 struct Picture: Decodable {
     var large: String
     var medium: String
+    
+    func localTransform() -> PictureRealm {
+        return PictureRealm(medium: medium, large: large)
+    }
 }

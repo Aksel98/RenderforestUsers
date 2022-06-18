@@ -26,4 +26,8 @@ struct User: Decodable {
         \(location.street.number) \(location.street.name) \(location.state) \(location.city)
         """
     }
+    
+    func localTransform() -> UserRealm {
+        return UserRealm(gender: gender, phone: phone, email: email, name: name.localTransform(), location: location.localTransform(), picture: picture.localTransform())
+    }
 }

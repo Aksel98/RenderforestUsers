@@ -10,4 +10,8 @@ import Foundation
 struct Name: Decodable {
     var first: String
     var last: String
+    
+    func localTransform() -> NameRealm {
+        return NameRealm(first: first, last: last)
+    }
 }

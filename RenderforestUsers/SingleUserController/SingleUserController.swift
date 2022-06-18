@@ -42,21 +42,21 @@ class SingleUserController: UIViewController {
     }
     
     private func configureSaveButtons() {
-//        UserLocalDataProvider().getSavedUsers().contains(where: { $0.email == user.email }) ? removeState() : saveState()
+        UserLocalDataProvider.shared.getSavedUsers().contains(where: { $0.email == user.email }) ? removeState() : saveState()
     }
     
     private func saveState() {
-//        saveUserButton.setTitle("Save user", for: .normal)
-//        saveUserButton.backgroundColor = UIColor(named: "UsersGreenColor")
-//        saveUserButton.isEnabled = true
-//        removeButton.isHidden = true
+        saveUserButton.setTitle("Save user", for: .normal)
+        saveUserButton.backgroundColor = UIColor(named: "UsersGreenColor")
+        saveUserButton.isEnabled = true
+        removeButton.isHidden = true
     }
     
     private func removeState() {
-//        saveUserButton.setTitle("User saved", for: .normal)
-//        saveUserButton.backgroundColor = UIColor(named: "UsersGreyColor")
-//        saveUserButton.isEnabled = false
-//        removeButton.isHidden = false
+        saveUserButton.setTitle("User saved", for: .normal)
+        saveUserButton.backgroundColor = UIColor(named: "UsersGreyColor")
+        saveUserButton.isEnabled = false
+        removeButton.isHidden = false
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -66,12 +66,12 @@ class SingleUserController: UIViewController {
     }
     
     @IBAction func saveUserAction(_ sender: Any) {
-//        UserLocalDataProvider().saveUser(user)
-//        removeState()
+        UserLocalDataProvider.shared.saveUser(user)
+        removeState()
     }
     
     @IBAction func removeUserAction(_ sender: Any) {
-//        UserLocalDataProvider().removeUser(user)
-//        saveState()
+        UserLocalDataProvider.shared.removeUser(user)
+        saveState()
     }
 }

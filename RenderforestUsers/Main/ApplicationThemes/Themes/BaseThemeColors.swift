@@ -12,47 +12,15 @@ struct BaseThemeColors {
         return UIColor(hexString: "#FFFFFF")!
     }
     
-    func getUltraLightGray() -> UIColor {
-        return UIColor(hexString: "#F2F2F6")!
+    func getGray() -> UIColor {
+        return UIColor(hexString: "#767680")!
     }
     
     func getLightGray() -> UIColor {
-        return UIColor(hexString: "#E7E7EC")!
+        return UIColor(hexString: "#E8E8E8")!
     }
     
-    func getGray() -> UIColor {
-        return UIColor(hexString: "#CBCBCB")!
-    }
-    
-    func getDarkGray() -> UIColor {
-        return UIColor(hexString: "#666666")!
-    }
-    
-    func getBlack() -> UIColor {
-        return UIColor.black
-    }
-    
-    func getIconGreen() -> UIColor {
-        return UIColor(hexString: "#97B81D")!
-    }
-    
-    func getSettingColor() -> UIColor {
-        return UIColor(hexString: "#7BAFEE")!
-    }
-    
-    func getDelete() -> UIColor {
-        return UIColor(hexString: "#E85041")!
-    }
-    
-    func getShare() -> UIColor {
-        return UIColor(hexString: "#20A9B4")!
-    }
-    
-    func getCommonBlue() -> UIColor {
-        return UIColor(hexString: "#4C72A9")!
-    }
-    
-    func getDisplaySettingGray() -> UIColor {
-        return UIColor(hexString: "#686869")!
+    func getGreen() -> UIColor {
+        return UIColor(hexString: "#12E47C")!
     }
 }

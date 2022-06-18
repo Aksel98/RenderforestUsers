@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E351374326ACE426814F187 /* Pods_RenderforestUsers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C36C61BF9FC0C040A8886F6 /* Pods_RenderforestUsers.framework */; };
 		92D861AB285D054500B5388C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D861AA285D054500B5388C /* AppDelegate.swift */; };
 		92D861AD285D054500B5388C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D861AC285D054500B5388C /* SceneDelegate.swift */; };
 		92D861AF285D054500B5388C /* UserListingContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D861AE285D054500B5388C /* UserListingContoller.swift */; };
@@ -37,6 +38,12 @@
 		92D8622B285D47DB00B5388C /* UserApiDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D8622A285D47DB00B5388C /* UserApiDataProvider.swift */; };
 		92D8622D285D47E900B5388C /* UserLocalDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D8622C285D47E900B5388C /* UserLocalDataProvider.swift */; };
 		92D86230285D482000B5388C /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D8622F285D482000B5388C /* Result.swift */; };
+		92D86232285D4B3600B5388C /* UserRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D86231285D4B3600B5388C /* UserRealm.swift */; };
+		92D86234285D4B4700B5388C /* NameRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D86233285D4B4700B5388C /* NameRealm.swift */; };
+		92D86236285D4B5000B5388C /* PictureRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D86235285D4B5000B5388C /* PictureRealm.swift */; };
+		92D86238285D4B6700B5388C /* CoordinatesRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D86237285D4B6700B5388C /* CoordinatesRealm.swift */; };
+		92D8623A285D4B7000B5388C /* StreetRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D86239285D4B7000B5388C /* StreetRealm.swift */; };
+		92D8623C285D4B7A00B5388C /* LocationRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92D8623B285D4B7A00B5388C /* LocationRealm.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +64,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08EE08FC6328201729FD1D7F /* Pods-RenderforestUsers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RenderforestUsers.debug.xcconfig"; path = "Target Support Files/Pods-RenderforestUsers/Pods-RenderforestUsers.debug.xcconfig"; sourceTree = "<group>"; };
+		7FB8755001EE43A6481EB186 /* Pods-RenderforestUsers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RenderforestUsers.release.xcconfig"; path = "Target Support Files/Pods-RenderforestUsers/Pods-RenderforestUsers.release.xcconfig"; sourceTree = "<group>"; };
 		92D861A7285D054500B5388C /* RenderforestUsers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RenderforestUsers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92D861AA285D054500B5388C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92D861AC285D054500B5388C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +100,13 @@
 		92D8622A285D47DB00B5388C /* UserApiDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserApiDataProvider.swift; sourceTree = "<group>"; };
 		92D8622C285D47E900B5388C /* UserLocalDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLocalDataProvider.swift; sourceTree = "<group>"; };
 		92D8622F285D482000B5388C /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		92D86231285D4B3600B5388C /* UserRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRealm.swift; sourceTree = "<group>"; };
+		92D86233285D4B4700B5388C /* NameRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameRealm.swift; sourceTree = "<group>"; };
+		92D86235285D4B5000B5388C /* PictureRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureRealm.swift; sourceTree = "<group>"; };
+		92D86237285D4B6700B5388C /* CoordinatesRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesRealm.swift; sourceTree = "<group>"; };
+		92D86239285D4B7000B5388C /* StreetRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreetRealm.swift; sourceTree = "<group>"; };
+		92D8623B285D4B7A00B5388C /* LocationRealm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRealm.swift; sourceTree = "<group>"; };
+		9C36C61BF9FC0C040A8886F6 /* Pods_RenderforestUsers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RenderforestUsers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E351374326ACE426814F187 /* Pods_RenderforestUsers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +135,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BAAF2BC0BC84250BCF915B4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				08EE08FC6328201729FD1D7F /* Pods-RenderforestUsers.debug.xcconfig */,
+				7FB8755001EE43A6481EB186 /* Pods-RenderforestUsers.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4CAD5DBC052BBE1957B893B1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C36C61BF9FC0C040A8886F6 /* Pods_RenderforestUsers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		92D8619E285D054500B5388C = {
 			isa = PBXGroup;
 			children = (
@@ -125,6 +159,8 @@
 				92D861C0285D054600B5388C /* RenderforestUsersTests */,
 				92D861CA285D054600B5388C /* RenderforestUsersUITests */,
 				92D861A8285D054500B5388C /* Products */,
+				0BAAF2BC0BC84250BCF915B4 /* Pods */,
+				4CAD5DBC052BBE1957B893B1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -296,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				92D861FA285D142600B5388C /* User.swift */,
+				92D86231285D4B3600B5388C /* UserRealm.swift */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -304,6 +341,7 @@
 			isa = PBXGroup;
 			children = (
 				92D861FD285D148600B5388C /* Location.swift */,
+				92D8623B285D4B7A00B5388C /* LocationRealm.swift */,
 			);
 			path = Location;
 			sourceTree = "<group>";
@@ -312,6 +350,7 @@
 			isa = PBXGroup;
 			children = (
 				92D86203285D14B700B5388C /* Street.swift */,
+				92D86239285D4B7000B5388C /* StreetRealm.swift */,
 			);
 			path = Street;
 			sourceTree = "<group>";
@@ -320,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				92D86201285D14AE00B5388C /* Coordinates.swift */,
+				92D86237285D4B6700B5388C /* CoordinatesRealm.swift */,
 			);
 			path = Coordinates;
 			sourceTree = "<group>";
@@ -328,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				92D86206285D154000B5388C /* Name.swift */,
+				92D86233285D4B4700B5388C /* NameRealm.swift */,
 			);
 			path = Name;
 			sourceTree = "<group>";
@@ -336,6 +377,7 @@
 			isa = PBXGroup;
 			children = (
 				92D86209285D159400B5388C /* Picture.swift */,
+				92D86235285D4B5000B5388C /* PictureRealm.swift */,
 			);
 			path = Picture;
 			sourceTree = "<group>";
@@ -373,9 +415,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 92D861D1285D054600B5388C /* Build configuration list for PBXNativeTarget "RenderforestUsers" */;
 			buildPhases = (
+				29B28C923D234D1412561D38 /* [CP] Check Pods Manifest.lock */,
 				92D861A3285D054500B5388C /* Sources */,
 				92D861A4285D054500B5388C /* Frameworks */,
 				92D861A5285D054500B5388C /* Resources */,
+				6DD256412CAD170654D3E6D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -494,18 +538,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		29B28C923D234D1412561D38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RenderforestUsers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6DD256412CAD170654D3E6D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RenderforestUsers/Pods-RenderforestUsers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RenderforestUsers/Pods-RenderforestUsers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RenderforestUsers/Pods-RenderforestUsers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		92D861A3285D054500B5388C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				92D861EE285D0E2900B5388C /* UsersCell.swift in Sources */,
+				92D86232285D4B3600B5388C /* UserRealm.swift in Sources */,
 				92D861AF285D054500B5388C /* UserListingContoller.swift in Sources */,
 				92D861E0285D084500B5388C /* ThemeManager.swift in Sources */,
 				92D861E4285D091E00B5388C /* BaseThemeColors.swift in Sources */,
 				92D8620A285D159400B5388C /* Picture.swift in Sources */,
 				92D8620D285D242100B5388C /* SingleUserController.swift in Sources */,
 				92D861F6285D121000B5388C /* CommonCommand.swift in Sources */,
+				92D86236285D4B5000B5388C /* PictureRealm.swift in Sources */,
 				92D86229285D47C900B5388C /* TabbarEnum.swift in Sources */,
 				92D86211285D251D00B5388C /* UserSelectionCommand.swift in Sources */,
 				92D861F3285D11E400B5388C /* GetUsersCommand.swift in Sources */,
@@ -515,10 +603,14 @@
 				92D861AD285D054500B5388C /* SceneDelegate.swift in Sources */,
 				92D86207285D154000B5388C /* Name.swift in Sources */,
 				92D8622B285D47DB00B5388C /* UserApiDataProvider.swift in Sources */,
+				92D8623A285D4B7000B5388C /* StreetRealm.swift in Sources */,
 				92D861DD285D075900B5388C /* UIColorExtension.swift in Sources */,
 				92D86202285D14AE00B5388C /* Coordinates.swift in Sources */,
 				92D861E8285D0C1000B5388C /* UsersTableView.swift in Sources */,
+				92D86234285D4B4700B5388C /* NameRealm.swift in Sources */,
 				92D861FE285D148600B5388C /* Location.swift in Sources */,
+				92D8623C285D4B7A00B5388C /* LocationRealm.swift in Sources */,
+				92D86238285D4B6700B5388C /* CoordinatesRealm.swift in Sources */,
 				92D8622D285D47E900B5388C /* UserLocalDataProvider.swift in Sources */,
 				92D861FB285D142600B5388C /* User.swift in Sources */,
 			);
@@ -694,6 +786,7 @@
 		};
 		92D861D2285D054600B5388C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08EE08FC6328201729FD1D7F /* Pods-RenderforestUsers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -722,6 +815,7 @@
 		};
 		92D861D3285D054600B5388C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FB8755001EE43A6481EB186 /* Pods-RenderforestUsers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

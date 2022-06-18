@@ -13,4 +13,8 @@ struct Location: Decodable {
     let state: String
     let street: Street
     let coordinates: Coordinates
+    
+    func localTransform() -> LocationRealm {
+        return LocationRealm(country: country, city: city, state: state, street: street.localTransform(), coordinates: coordinates.localTransform())
+    }
 }
